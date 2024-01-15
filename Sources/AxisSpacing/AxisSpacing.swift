@@ -9,7 +9,7 @@
 import Foundation
 
 
-class AxisSpacing {
+public class AxisSpacing {
     var min: Double
     var max: Double
     let maxNumberTicks = 12
@@ -17,7 +17,7 @@ class AxisSpacing {
     var numberTicks = 10
     let maxTickSpacing = 15.0
     var tickSpacing = 10.0
-    let roundBys = [1000.0, 500.0, 200.0, 100.0, 50.0, 25.0, 20.0, 10.0, 5.0, 4.0, 2.0, 1.0, 0.5, 0.25, 0.2, 0.1, 0.05, 0.025, 0.02, 0.01, 0.001, 0.0001]
+    let roundBys = [10000, 1000.0, 500.0, 200.0, 100.0, 50.0, 25.0, 20.0, 10.0, 5.0, 4.0, 2.0, 1.0, 0.5, 0.25, 0.2, 0.1, 0.05, 0.025, 0.02, 0.01, 0.001, 0.0001]
     var spacing = 0.0
     var newMin = 0.0
     var newMax = 0.0
@@ -68,7 +68,7 @@ class AxisSpacing {
         }
     }
        
-    init(min: Double, max: Double) {
+    public init(min: Double, max: Double) {
         self.min = min
         self.max = max
         axis()
