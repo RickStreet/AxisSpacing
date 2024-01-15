@@ -14,13 +14,13 @@ public class AxisSpacing {
     var max: Double
     let maxNumberTicks = 12
     let minNumberTicks = 6
-    var numberTicks = 10
+    public var numberTicks = 10
     let maxTickSpacing = 15.0
-    var tickSpacing = 10.0
+    public var tickSpacing = 10.0
     let roundBys = [10000, 1000.0, 500.0, 200.0, 100.0, 50.0, 25.0, 20.0, 10.0, 5.0, 4.0, 2.0, 1.0, 0.5, 0.25, 0.2, 0.1, 0.05, 0.025, 0.02, 0.01, 0.001, 0.0001]
     var spacing = 0.0
-    var newMin = 0.0
-    var newMax = 0.0
+    public var newMin = 0.0
+    public var newMax = 0.0
 
     private func axis() {
         let range = max - min
